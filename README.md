@@ -1,6 +1,6 @@
 # vue-cesium
 
-> cesium-vue的测试项目
+> vue-cesium的测试项目
 
 ## Build Setup
 
