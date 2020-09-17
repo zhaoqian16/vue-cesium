@@ -1,4 +1,4 @@
-# cesium-vue-test
+# cesium-vue
 
 > cesium-vue的测试项目
 
