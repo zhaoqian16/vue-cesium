@@ -7,10 +7,10 @@
       <el-radio-button label="10"></el-radio-button>
       <el-radio-button label="100"></el-radio-button>
     </el-radio-group>
-    <el-radio-group v-model="axis">
-      <el-radio-button label="x">{{ xStep }}</el-radio-button>
-      <el-radio-button label="y">{{ yStep }}</el-radio-button>
-      <el-radio-button label="z">{{ zStep }}</el-radio-button>
+    <el-radio-group v-model="offsetAxis" size="mini">
+      <el-radio-button label="x"></el-radio-button>
+      <el-radio-button label="y"></el-radio-button>
+      <el-radio-button label="z"></el-radio-button>
     </el-radio-group>
     <el-button-group>
       <el-button size="mini" @click="startOffset('plus')">++</el-button>
@@ -20,26 +20,33 @@
 </template>
 
 <script>
+let Cesium = require('cesium/Source/Cesium')
+
 export default {
   data () {
     return {
-      unitStep: 1
+      unitStep: 1,
+      offsetAxis: 'x'
     }
   },
   methods: {
     startOffset (flag) {
       let stepArr, tans
-      if (!this.unitStep || !this.axis) {
-        this.$emit()
+      if (!this.unitStep || !this.offsetAxis) {
+        this.$message({
+          message: '请选择移动步长和移动坐标轴!',
+          type: 'error'
+        })
+        return
       }
       this.unitStep = this.unitStep || '1'
       let step = flag === 'plus' ? parseFloat(this.unitStep) : -parseFloat(this.unitStep)
 
-      if (offsetAxis === 'x') {
+      if (this.offsetAxis === 'x') {
         stepArr = Cesium.Cartesian3.fromArray([step, 0, 0])
-      } else if (offsetAxis === 'y') {
+      } else if (this.offsetAxis === 'y') {
         stepArr = Cesium.Cartesian3.fromArray([0, step, 0])
-      } else if (offsetAxis === 'z') {
+      } else if (this.offsetAxis === 'z') {
         stepArr = Cesium.Cartesian3.fromArray([0, 0, step])
       }
       let tilesetArr = Cesium.Cartesian3.fromArray([
@@ -61,5 +68,9 @@ export default {
 </script>
 
 <style scoped>
-
+.move_tile {
+  position: absolute;
+  top: 170px;
+  left: 5px;
+}
 </style>

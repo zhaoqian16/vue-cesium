@@ -10,11 +10,11 @@
   <div>
     <div class="meature">
       <el-button-group>
-        <el-button size="mini" circle @click="meatureLineSurface()">测距</el-button>
+        <el-button size="mini" @click="meatureLineSurface()">测距</el-button>
         <el-button size="mini" circle @click="meatureAreaSpace()">测面积</el-button>
         <el-button size="mini" circle @click="meatureTriangleSpace()">三角测量</el-button>
         <el-button size="mini" circle @click="meatureAngle()">测角度</el-button>
-        <el-button size="mini" circle @click="meatureNorthAngle()">测北向夹角</el-button>
+        <el-button size="mini" @click="meatureNorthAngle()">测北向夹角</el-button>
       </el-button-group>
     </div>
   </div>

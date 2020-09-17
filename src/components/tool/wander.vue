@@ -10,8 +10,8 @@
   <div>
     <div class="personWander">
       <el-button-group>
-        <el-button size="mini" circle type="primary" @click="drawRoute()">定义路线</el-button>
-        <el-button size="mini" circle type="primary" @click="wandering()">开始漫游</el-button>
+        <el-button size="mini" @click="drawRoute()">定义路线</el-button>
+        <el-button size="mini" @click="wandering()">开始漫游</el-button>
       </el-button-group>
     </div>
   </div>
@@ -269,7 +269,7 @@ export default {
 <style>
 .personWander {
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 10px;
 }
 </style>

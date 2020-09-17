@@ -18,7 +18,7 @@
       <Meature></Meature>
       <Wander></Wander>
       <AddressSearch></AddressSearch>
-      <!-- <Move3dtile></Move3dtile> -->
+      <Move3dtile></Move3dtile>
     </div>
   </div>
 </template>
