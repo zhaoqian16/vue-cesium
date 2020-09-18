@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-07-22 17:22:55
  * @LastEditors: Please set LastEditors
  * @Description: 定义漫游路线，实现地面漫游
- * @FilePath: \cesium-vue-test\src\components\tool\wander.vue
+ * @FilePath: \vue-cesium\src\components\tool\wander.vue
 -->
 <template>
   <div>

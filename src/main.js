@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-07-09 14:38:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \cesium-vue-test\src\main.js
+ * @FilePath: \vue-cesium\src\main.js
  */ 
 import Vue from 'vue'
 import App from './App'

@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-08-20 15:52:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \cesium-vue-test\src\components\others\visibilityAnalysis.vue
+ * @FilePath: \vue-cesium\src\components\others\visibilityAnalysis.vue
 -->
 <template>
   <div class="map">

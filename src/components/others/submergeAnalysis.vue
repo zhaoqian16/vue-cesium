@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-08-17 17:54:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \cesium-vue-test\src\components\others\submergAnalysis.vue
+ * @FilePath: \vue-cesium\src\components\others\submergAnalysis.vue
 -->
 <template>
   <div class="map">

@@ -17,8 +17,8 @@
       <DrawEntity></DrawEntity>
       <Meature></Meature>
       <Wander></Wander>
-      <AddressSearch></AddressSearch>
-      <Move3dtile></Move3dtile>
+      <!-- <AddressSearch></AddressSearch>
+      <Move3dtile :tileset="tileset"></Move3dtile> -->
     </div>
   </div>
 </template>
@@ -43,7 +43,8 @@ export default {
       viewer: '',
       tMap: '',
       mapInited: false,
-      currentCameraInfo: ''
+      currentCameraInfo: '',
+      tileset: null
     }
   },
   components: {
@@ -59,6 +60,7 @@ export default {
   mounted () {
     this.initCMap()
     this.initTMap()
+    this.initTileset()
     this.mapInited = true
   },
   methods: {
@@ -109,7 +111,7 @@ export default {
       document.getElementsByClassName('navigation-controls')[0].style.backgroundColor = 'rgba(47, 53, 60, 0.5)'
 
       this.addBaseMap()
-      this.directLocation()
+      // this.directLocation()
       this.listenCamera()
     },
     /**
@@ -240,6 +242,28 @@ export default {
         roll: Cesium.Math.toDegrees(this.viewer.scene.camera.roll)
       }
       this.currentCameraInfo = `经度: ${cameraInfo.longitude}° 纬度: ${cameraInfo.latitude}° 高度: ${cameraInfo.height} 航偏角: ${cameraInfo.heading}° 俯仰角: ${cameraInfo.pitch}° 翻滚角: ${cameraInfo.roll}°`
+    },
+    initTileset () {
+      const viewer = this.viewer
+      this.tileset = new Cesium.Cesium3DTileset({
+        url: '../../static/3dTiles/dongqu/tileset.json',
+        imageBasedLightingFactor: new Cesium.Cartesian2(1, 1),
+        lightColor: new Cesium.Cartesian3(10, 10, 10),
+        luminanceAtZenith: 0.9
+      })
+      this.tileset.readyPromise.
+        then( tileset => {
+          viewer.scene.primitives.add(tileset)
+          viewer.camera.flyTo({
+            destination: Cesium.Cartesian3.fromDegrees(113.76037194463018, 34.793114893003974, 459.44543851945315),
+            orientation: {
+              heading: Cesium.Math.toRadians(17.959169558786204),
+              pitch: Cesium.Math.toRadians(-41.39227901269581),
+              roll: Cesium.Math.toRadians(0.0741421676052953)
+            },
+            duration: 2
+          })
+        })
     }
   }
 }

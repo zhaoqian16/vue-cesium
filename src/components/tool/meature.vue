@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-09-03 16:45:16
  * @LastEditors: Please set LastEditors
  * @Description: 测距、测面积
- * @FilePath: \cesium-vue-test\src\components\tool\meature.vue
+ * @FilePath: \vue-cesium\src\components\tool\meature.vue
 -->
 <template>
   <div>

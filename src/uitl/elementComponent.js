@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import {
+  Row,
   Input,
   Button,
   RadioGroup,
+  Radio,
   RadioButton,
   Select,
   Option,
@@ -13,9 +15,11 @@ import {
   Checkbox,
   Dialog,
   Message,
-  Popover
+  Popover,
+  InputNumber
 } from 'element-ui'
 
+Vue.use(Row)
 Vue.use(Input)
 Vue.use(Button)
 Vue.use(RadioGroup)
@@ -29,6 +33,8 @@ Vue.use(Loading.directive)
 Vue.use(Checkbox)
 Vue.use(Dialog)
 Vue.use(Popover)
+Vue.use(Radio)
+Vue.use(InputNumber)
 
 Vue.prototype.$loading = Loading.service
 Vue.prototype.$message = Message;

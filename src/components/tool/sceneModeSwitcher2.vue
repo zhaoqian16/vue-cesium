@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-07-09 14:48:09
  * @LastEditors: Please set LastEditors
  * @Description: 基于cesium谷歌影像图（三维）和天地图矢量地图（二维）的二三维切换
- * @FilePath: \cesium-vue-test\src\components\tool\modeSwitcher_ct.vue
+ * @FilePath: \vue-cesium\src\components\tool\modeSwitcher_ct.vue
 -->
 <template>
   <div class="dSwitch" id="dSwitchContainer" ref="switcher">

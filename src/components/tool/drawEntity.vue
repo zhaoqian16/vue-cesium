@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-08-19 17:45:25
  * @LastEditors: Please set LastEditors
  * @Description: 绘制点、线、面、圆、矩形并编辑
- * @FilePath: \cesium-vue-test\src\components\tool\drawEntity.vue
+ * @FilePath: \vue-cesium\src\components\tool\drawEntity.vue
 -->
 <template>
   <div>

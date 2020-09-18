@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-09-08 17:20:55
  * @LastEditors: xiongqianqian
  * @Description: 地址搜索框
- * @FilePath: \cesium-vue-test\src\components\tool\addressSearch.vue
+ * @FilePath: \vue-cesium\src\components\tool\addressSearch.vue
 -->
 <template>
   <div class="map_search">

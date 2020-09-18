@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-07-09 10:54:18
  * @LastEditors: Please set LastEditors
  * @Description: wms图层的控制
- * @FilePath: \cesium-vue-test\src\components\tool\layerControl.vue
+ * @FilePath: \vue-cesium\src\components\tool\layerControl.vue
 -->
 <template>
   <div class="layers-control">

@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-08-12 17:59:59
  * @LastEditors: Please set LastEditors
  * @Description: 获取断面高度的变化图
- * @FilePath: \cesium-vue-test\src\components\others\sectionHRange.vue
+ * @FilePath: \vue-cesium\src\components\others\sectionHRange.vue
 -->
 <template>
   <div class="map">

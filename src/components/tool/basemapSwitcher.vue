@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-09-02 15:33:30
  * @LastEditors: Please set LastEditors
  * @Description: cesium基础地图切换按钮（卫星图/标准地图）
- * @FilePath: \cesium-vue-test\src\components\tool\basemapSwitcher.vue
+ * @FilePath: \vue-cesium\src\components\tool\basemapSwitcher.vue
  -->
 <template>
   <div class="mapSwicher">

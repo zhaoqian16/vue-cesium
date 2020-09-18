@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-07-30 09:49:25
  * @LastEditors: Please set LastEditors
  * @Description: 基于cesium的二三维转换
- * @FilePath: \cesium-vue-test\src\components\tool\modeSwitcher2.vue
+ * @FilePath: \vue-cesium\src\components\tool\modeSwitcher2.vue
 -->
 <template>
   <div>
