@@ -1,7 +1,7 @@
 <!--
  * @Author: xiongqianqian
  * @Date: 2019-12-24 14:09:48
- * @LastEditTime: 2020-09-02 15:33:30
+ * @LastEditTime: 2021-01-12 10:39:45
  * @LastEditors: Please set LastEditors
  * @Description: cesium基础地图切换按钮（卫星图/标准地图）
  * @FilePath: \vue-cesium\src\components\tool\basemapSwitcher.vue
@@ -62,7 +62,7 @@ let Cesium = require('cesium/Source/Cesium')
 export default {
   data () {
     return {
-      mapType: 5,
+      mapType: 3,
       SatelliteLayer: '',
       normalLayer: '',
       mapUrl: [

@@ -24,6 +24,8 @@ import HeatMap from '@/components/others/heatMap'
 import SubmergeAnalysis from '@/components/others/submergeAnalysis'
 import VisibilityAnalysis from '@/components/others/visibilityAnalysis'
 
+import AddWMTSLayer from '@/components/addLayer/addWMTSLayer'
+
 Vue.use(Router)
 
 export default new Router({
@@ -107,6 +109,11 @@ export default new Router({
       path: '/visibilityAnalysis',
       name: 'visibilityAnalysis',
       component: VisibilityAnalysis
+    },
+    {
+      path: '/addWMTSLayer',
+      name: 'addWMTSLayer',
+      component: AddWMTSLayer
     }
   ]
 })
