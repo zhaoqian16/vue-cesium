@@ -14,9 +14,9 @@
       <SceneModeSwitcher1></SceneModeSwitcher1>
       <BasemapSwitcher></BasemapSwitcher>
       <LayerManagement></LayerManagement>
-      <DrawEntity></DrawEntity>
+      <!-- <DrawEntity></DrawEntity>
       <Meature></Meature>
-      <Wander></Wander>
+      <Wander></Wander> -->
       <!-- <AddressSearch></AddressSearch>
       <Move3dtile :tileset="tileset"></Move3dtile> -->
     </div>

@@ -1,7 +1,7 @@
 <!--
  * @Author: xiongqianqian
  * @Date: 2019-12-24 14:09:48
- * @LastEditTime: 2021-01-12 10:39:45
+ * @LastEditTime: 2021-03-24 17:15:10
  * @LastEditors: Please set LastEditors
  * @Description: cesium基础地图切换按钮（卫星图/标准地图）
  * @FilePath: \vue-cesium\src\components\tool\basemapSwitcher.vue
@@ -204,7 +204,9 @@ export default {
           tileMatrixLabels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19'],
           maximumLevel: 18
         }), {
-          show: false
+          show: false,
+          colorToAlpha: "#2B53F9",
+          alpha: 0.5
         }),
         // 天地图晕渲图
         new Cesium.ImageryLayer(new Cesium.WebMapTileServiceImageryProvider({
@@ -236,7 +238,8 @@ export default {
           contrast: 1.48,
           hue: 0,
           saturation: 1.44,
-          gamma: 0.68
+          gamma: 0.68,
+          colorToAlpha: "#3A3B3C"
         }),
         // arcgis 影像图
         new Cesium.ImageryLayer(new Cesium.ArcGisMapServerImageryProvider({
@@ -378,6 +381,6 @@ export default {
 #map-color {
   background-color: #fff;
   font-size: 12px;
-  display: none;
+  /* display: none; */
 }
 </style>
